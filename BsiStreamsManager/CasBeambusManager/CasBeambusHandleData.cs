@@ -30,9 +30,6 @@ namespace CasBeambusManager
 
         public override void DataProcessing(byte[] recievedData)
         {
-            if (m_audioDataBase == null)
-                return;
-
             m_stream_Segment_Builder.BuildTheStreamSegment(recievedData, (segment)=>
             {
                 TargetsAudio targetsAudio = m_audio_Stitcher.GetAudioForTargets(recievedData, m_streamInterpreter);
@@ -42,11 +39,8 @@ namespace CasBeambusManager
 
         public override void DataSerialize(byte[] recievedData)
         {
-            if(m_streamDataBase != null)
-            {
-                var StreamSegmentsRawData = new StreamSegmentsRawData(recievedData, DateTime.Now);
-                m_streamDataBase.Save(StreamSegmentsRawData);
-            }
+            var StreamSegmentsRawData = new StreamSegmentsRawData(recievedData, DateTime.Now);
+            m_streamDataBase.Save(StreamSegmentsRawData);
         }
 
         public override bool IsDataValid(byte[] recievedData)

@@ -19,13 +19,12 @@ namespace CasBeambusManager
         static void Main(string[] args)
         {
             var factory = new CasBeambusFactory();
-            var targetsAudioStitcher = factory.GetTargets_Audio_Stitcher();
             m_stream_listener = factory.GetListener();
             m_streamDataBase = factory.GetStreamDataBase();
             m_audioDataBase = factory.GetAudioDataBase();
-            m_stream_TemplateMethod = factory.GetDataHandle_Template_Method(targetsAudioStitcher, m_streamDataBase, m_audioDataBase);
+            m_stream_TemplateMethod = factory.GetAudiableStreamDataHandle_TemplateMethod(m_streamDataBase, m_audioDataBase);
             m_targets_Listener = factory.GetTargets_Listener();
-            m_targets_HandleData_Template_Method = factory.GetTargets_DataHandle_Template_Method(targetsAudioStitcher);
+            m_targets_HandleData_Template_Method = factory.GetTargetsDataHandle_TemplateMethod();
             start();
         }
 

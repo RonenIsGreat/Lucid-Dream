@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace SharedResources
 {
-    public class Targets_Interpreter : IInterpreter<SystemTracks>
+    public class TargetsInterpreter : IInterpreter<SystemTracks>
     {
         public SystemTracks ByteArrayToStruct(byte[] data)
         {

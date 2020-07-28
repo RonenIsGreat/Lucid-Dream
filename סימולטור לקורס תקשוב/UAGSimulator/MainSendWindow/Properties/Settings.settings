@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MainSendWindow.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Nav_ExchangeName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LucidNavData</Value>
+    </Setting>
+    <Setting Name="BdtCas_ExchangeName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LucidBdtCasData</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

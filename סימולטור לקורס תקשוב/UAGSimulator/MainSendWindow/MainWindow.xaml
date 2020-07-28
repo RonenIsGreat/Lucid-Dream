@@ -1,0 +1,26 @@
+﻿<Window x:Class="MainSendWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MainSendWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <CheckBox Name="BeamBus_Cas" Content="BeamBus Cas" HorizontalAlignment="Left" Margin="80,60,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="BeamBus_FasTas" Content="BeamBus Fas/Tas" HorizontalAlignment="Left" Margin="80,95,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="StaveBus_Prs" Content="StaveBus Prs" HorizontalAlignment="Left" Margin="80,130,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="IDRS" Content="IDRS" HorizontalAlignment="Left" Margin="80,165,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="Nav" Content="Nav" HorizontalAlignment="Left" Margin="80,200,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="Bdt_Cas" Content="Bdt Cas" HorizontalAlignment="Left" Margin="80,235,0,0" VerticalAlignment="Top"/>
+        <Button Name="SendButton" Content="Start sending" HorizontalAlignment="Left" Margin="125,298,0,0" VerticalAlignment="Top" Width="193" Height="32" Click="sendMessages_Click"/>
+        <Button Name="SendOnce" Content="Send Once" HorizontalAlignment="Left" Margin="451,298,0,0" VerticalAlignment="Top" Width="193" Height="32" Click="sendMessagesOnce_Click"/>
+        <!--<Button Content="Start Sending StaveBus Prs Messages" HorizontalAlignment="Left" Margin="110,0,0,0" VerticalAlignment="Top" Width="225" Click="sendIDRSMessages_Click"/>
+        <Button Content="Start Sending IDRS Messages" HorizontalAlignment="Left" Margin="110,50,0,0" VerticalAlignment="Top" Width="225" Click="sendIDRSMessages_Click"/>
+        <Button Content="Start Sending BeamBus Fas/Tas Messages" HorizontalAlignment="Left" Margin="110,100,0,0" VerticalAlignment="Top" Width="225" Click="sendBeamBusFasTasMessages_Click"/>
+        <Button Content="Start Sending BeamBus Cas Messages" HorizontalAlignment="Left" Margin="110,150,0,0" VerticalAlignment="Top" Width="225" Click="sendBeamBusCasMessages_Click"/>
+        <Button Content="Start Sending All UAG Messages" HorizontalAlignment="Left" Margin="110,200,0,0" VerticalAlignment="Top" Width="225" Click="sendAllMessages_Click"/>
+        <Button Content="Start Sending Nav Messages" HorizontalAlignment="Left" Margin="110,250,0,0" VerticalAlignment="Top" Width="225" Click="sendNavMessages_Click"/>
+        <Button Content="Start Sending Bdt Cas Messages" HorizontalAlignment="Left" Margin="110,300,0,0" VerticalAlignment="Top" Width="225 " Click="sendBdtCasMessages_Click"/>-->
+    </Grid>
+</Window>

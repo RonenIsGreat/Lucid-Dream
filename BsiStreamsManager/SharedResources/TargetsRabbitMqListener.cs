@@ -58,12 +58,12 @@ namespace SharedResources
             var consumer = new EventingBasicConsumer(m_trackDataChannel);
             consumer.Received += (model, ea) =>
             {
-                byte[] data = ea.Body;
+                byte[] data = ea.Body.ToArray();
                 handleData_Template_method.HandleData(data);
             };
 
             m_trackDataChannel.BasicConsume(queue: "track",
-                                            noAck: false,
+                                            autoAck: false,
                                             consumer: consumer);
         }
 
