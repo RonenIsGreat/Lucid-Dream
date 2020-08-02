@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SharedResources
 {
-    public class Targets_HandleData_Template_Method<G> : AbstractHandleData_TemplateMethod
+    public class TargetsHandleData_Template_Method<G> : AbstractHandleData_TemplateMethod
     {
         ITargets_Audio_Stitcher<G> m_targets_Audio_Stitcher;
         IInterpreter<SystemTracks> m_targetsInterpreter;
 
-        public Targets_HandleData_Template_Method(ITargets_Audio_Stitcher<G> targets_Audio_Stitcher,
+        public TargetsHandleData_Template_Method(ITargets_Audio_Stitcher<G> targets_Audio_Stitcher,
             IInterpreter<SystemTracks> targetsInterpreter)
         {
             m_targets_Audio_Stitcher = targets_Audio_Stitcher;

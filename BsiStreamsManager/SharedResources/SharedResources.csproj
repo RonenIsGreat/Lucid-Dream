@@ -80,7 +80,7 @@
     <Compile Include="IDataBase.cs" />
     <Compile Include="IInterpreter.cs" />
     <Compile Include="IListener.cs" />
-    <Compile Include="IStreamRecordingAbstractFactory.cs" />
+    <Compile Include="IStreamRecording_AbstractFactory.cs" />
     <Compile Include="IStreamSegmentBuilder.cs" />
     <Compile Include="IHandleData_TemplateMethod.cs" />
     <Compile Include="Segment.cs" />
@@ -89,7 +89,7 @@
     <Compile Include="ITargetsAudioStitcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemTracks.cs" />
-    <Compile Include="Targets_Interpreter.cs" />
+    <Compile Include="TargetsInterpreter.cs" />
     <Compile Include="TargetsHandleData.cs" />
     <Compile Include="TargetsRabbitMqListener.cs" />
   </ItemGroup>

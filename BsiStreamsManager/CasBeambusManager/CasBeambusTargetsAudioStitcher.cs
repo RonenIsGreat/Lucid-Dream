@@ -9,7 +9,22 @@ namespace CasBeambusManager
 {
     public class CasBeambusTargetsAudioStitcher : ITargets_Audio_Stitcher<CasBeambusStruct>
     {
+        static CasBeambusTargetsAudioStitcher m_casBeambusTargetsAudioStitcher;
         SystemTracks m_targets;
+
+        private CasBeambusTargetsAudioStitcher()
+        {
+        }
+
+        public static CasBeambusTargetsAudioStitcher GetInstance()
+        {
+            if (m_casBeambusTargetsAudioStitcher == null)
+            {
+                m_casBeambusTargetsAudioStitcher = new CasBeambusTargetsAudioStitcher();
+            }
+
+            return m_casBeambusTargetsAudioStitcher;
+        }
 
         public TargetsAudio GetAudioForTargets(byte[] segment, IInterpreter<CasBeambusStruct> segmentInterpreter)
         {
