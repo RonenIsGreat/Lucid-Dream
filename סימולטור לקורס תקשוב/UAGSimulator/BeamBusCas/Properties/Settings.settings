@@ -9,7 +9,7 @@
       <Value Profile="(Default)">25104</Value>
     </Setting>
     <Setting Name="Recording_path" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\Rageb\Desktop\האקויק ראגב\CAS_HAKATON.rec</Value>
+      <Value Profile="(Default)">reordings fo simulator 30 seconds\CAS_HAKATON.rec</Value>
     </Setting>
   </Settings>
 </SettingsFile>

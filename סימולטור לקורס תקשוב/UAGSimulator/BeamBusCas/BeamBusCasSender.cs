@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
+using System.IO;
 
 namespace BeamBusCas
 {
@@ -17,7 +18,7 @@ namespace BeamBusCas
 
         public static void SendMessage()
         {
-            subSements = FileEdit.GetRecording(Properties.Settings.Default.Recording_path);
+            subSements = FileEdit.GetRecording(Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, Properties.Settings.Default.Recording_path));
             client = new UDPSocket();
             client.Client(Properties.Settings.Default.IP, 
                 Properties.Settings.Default.Port);

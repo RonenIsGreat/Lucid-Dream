@@ -11,14 +11,14 @@ namespace CasBeambusManager
     {
         public IListener GetListener()
         {
-            string localIpAddress = "192.168.98.211";
+            string localIpAddress = "127.0.0.1";
             string multicastGroup = "239.0.3.4";
             return new CasBeambusUdpListener(localIpAddress, multicastGroup);
         }
 
         public IListener GetTargets_Listener()
         {
-            string ip = "223.234.217.6";
+            string ip = "127.0.0.1";
             string userName = "user";
             string password = "user";
             return new TargetsRabbitMqListener(ip, userName, password);
@@ -26,7 +26,7 @@ namespace CasBeambusManager
 
         public IDataBase<StreamSegmentsRawData> GetStreamDataBase()
         {
-            string ip = "223.234.217.6";
+            string ip = "127.0.0.1";
             string dbName = "LucidDream";
             string collectionName = "CasBeambusRawData";
             return new CasBeambusDataBase(ip, dbName, collectionName);
